@@ -1,0 +1,27 @@
+{% extends 'vocabulary/menu_vocabulary.html' %}
+{% load static %}
+{% block body %}
+<script src="{% static 'js/js_czlowiek.js' %}"></script>
+<div class="component_right">
+    <h1>Human</h1>
+    <div class="words">
+        <div>
+            <div class="previous" onclick="previous()">
+            </div>
+            <div class="translation">
+                <p id="polish">ramię, ręka</p>
+                <p id="english">arm</p>
+            </div>
+            <div class="next" onclick="next()">
+            </div>
+        </div>
+        <div>
+            <h2 class="button">Show</h2>
+            <div></div>
+
+            <h2 class="button">I'm ready for exam</h2>
+        </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

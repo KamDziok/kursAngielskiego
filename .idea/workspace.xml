@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd212c42-65d2-460c-9337-51c80b41cbb7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kurs/templates/vocabulary/lorem.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kurs/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kurs/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs/templates/gramar/lorem.html" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/templates/gramar/lorem.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs/templates/gramar/menu_gramar.html" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/templates/gramar/menu_gramar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kurs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kurs/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kursAngielskiego/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/kursAngielskiego/urls.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,14 +32,19 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/kurs/templates" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.25542405" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin.000\PycharmProjects\projekt\kursAngielskiego\kurs\templates" />
       <recent name="C:\Users\admin.000\PycharmProjects\projekt\kursAngielskiego\kurs\static" />
       <recent name="C:\Users\admin.000\PycharmProjects\projekt\kursAngielskiego\kurs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin.000\PycharmProjects\projekt\kursAngielskiego\kurs\templates" />
+      <recent name="C:\Users\admin.000\PycharmProjects\projekt\kursAngielskiego\kurs\templates\vocabulary" />
     </key>
   </component>
   <component name="RunDashboard">
