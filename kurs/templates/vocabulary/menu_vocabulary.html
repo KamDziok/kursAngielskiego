@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/style_words.css' %}">
+    {% block head_2 %}
+    {% endblock %}
+{% endblock %}
 {% block content %}
 <div class="content">
     {% block body %}

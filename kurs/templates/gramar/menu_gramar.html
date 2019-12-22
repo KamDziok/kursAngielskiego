@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/style_grammar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleMobGPT.css' %}"/>
+{% endblock %}
 {% block content %}
-
 <div class="content">
     {% block body %}
     {% endblock %}

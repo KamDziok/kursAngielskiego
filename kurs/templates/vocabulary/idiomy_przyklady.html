@@ -1,7 +1,10 @@
 {% extends 'vocabulary/menu_vocabulary.html' %}
 {% load static %}
+{% block head_2 %}
+    <script src="{% static 'js/js_idiomy.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/styleMobId.css' %}"/>
+{% endblock %}
 {% block body %}
-<script src="{% static 'js/js_idiomy.js' %}"></script>
 <div class="component_right">
     <h1>Idioms</h1>
     <div class="words">
@@ -18,8 +21,13 @@
         <div>
             <h2 class="button">Show</h2>
             <div></div>
-            <h2 class="button">I'm ready for exam</h2>
-        </a>
+            {% if user.is_authenticated %}
+                <a href="{% url ''%}">
+            {% else %}
+                <a href="{% url 'login'%}">
+            {% endif %}
+                <h2 class="button">I'm ready for exam</h2>
+            </a>
         </div>
     </div>
 </div>

@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/style_logIn.css' %}"/>
+{% endblock %}
+{% block content %}
+<div class="content contentLogIn">
+    <div class="form offset-xl-4 offset-lg-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+        <form id="regiForm" method="post" action="<?php echo($_SERVER['PHP_SELF']); ?>">
+            <h2>Rejestracja do ENG</h2>
+
+            <p>Imie*:</p>
+            <input class="inputText" type="text" name="nameUser"/>
+
+            <p>Nazwisko*:</p>
+            <input class="inputText" type="text" name="surname"/>
+
+            <p>PESEL*:</p>
+            <input class="inputText" type="text" name="Pesel"/>
+            <p class="pesel error" id="pesel">To nie jest pesel.</p>
+
+            <p>E-mail*:</p>
+            <input class="inputText" type="text" name="email"/>
+            <p class="email error" id="email">To nie jest adress e-maile.</p>
+
+            <p>Login*:</p>
+            <input class="inputText" type="text" name="login"/>
+            <p class="login error" id="login">Login musi zawierać minimum 3 znaki.</p>
+
+            <p>Hasło*:</p>
+            <input class="inputText" type="password" name="npassword"/>
+            <p class="password error" id="password">Hasło musi mieć więcej niż 6 znaków.</p>
+
+            <p>Powtórz hasło*:</p>
+            <input class="inputText" type="password" name="rep_password"/>
+            <p class="rep_password error" id="rep_password">Hasła nie są idetyczne.</p>
+
+            <p>Miejscowość*:</p>
+            <input class="inputText" type="text" name="city"/>
+
+            <p>Ulica*:</p>
+            <input class="inputText" type="text" name="street"/>
+
+            <p>Numer budynku*:</p>
+            <input class="inputTextBuild" type="text" name="building"/>
+
+            <p>Numer lokalu:</p>
+            <input class="inputTextBuild" type="text" name="flat"/>
+
+            <p>Kod pocztowy*:</p>
+            <input type="text" name="kod1"/>
+            <p class="kod1 error" id="kod1">Błędny kod pocztowy.</p>
+
+            <p>Poczta*:</p>
+            <input type="text" name="postoffice"/>
+
+            <p>
+                <label><input class="inputCheckBox" type="checkbox" name="regul">Akceptuję regulamin.</label>
+            </p>
+            <input class="submit" type="submit" id="submit" value="Zarejestruj" disabled="disabled">
+            <p>
+                * - pola wymagane
+            </p>
+        </form>
+    </div>
+</div>
+{% endblock %}

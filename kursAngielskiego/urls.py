@@ -24,5 +24,7 @@ urlpatterns = [
     path('vocabulary/', include('kurs.urls'), name='vocabulary'),
     path('phonetics/', include('kurs.urls'), name='phonetics'),
     path('culture/', include('kurs.urls'), name='culture'),
+    path('accounts/', include('django.contrib.auth.urls')),
+    path('accounts/', include('accounts.urls')),
     path('admin/', admin.site.urls),
 ]

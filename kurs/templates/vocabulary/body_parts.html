@@ -1,7 +1,10 @@
 {% extends 'vocabulary/menu_vocabulary.html' %}
 {% load static %}
+{% block head_2 %}
+    <script src="{% static 'js/js_czlowiek.js' %}"></script>
+<link rel="stylesheet" href="{% static 'css/styleMobCz.css' %}"/>
+{% endblock %}
 {% block body %}
-<script src="{% static 'js/js_czlowiek.js' %}"></script>
 <div class="component_right">
     <h1>Human</h1>
     <div class="words">
@@ -18,7 +21,11 @@
         <div>
             <h2 class="button">Show</h2>
             <div></div>
-
+            {% if user.is_authenticated %}
+                <a href="{% url ''%}">
+            {% else %}
+                <a href="{% url 'login'%}">
+            {% endif %}
             <h2 class="button">I'm ready for exam</h2>
         </a>
         </div>

@@ -9,7 +9,6 @@
 
     <link rel="stylesheet" href="{% static 'css/styleMob.css' %}"/>
     <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-    <link rel="stylesheet" href="{% static 'css/style_main_page.css' %}">
     <link rel="stylesheet" href="{% static 'css/style1280.css' %}"/>
     <script src="{% static 'jq/jquery-3.3.1.min.js' %}"></script>
     <script src="{% static 'jq/jquery.color-2.1.2.min.js' %}"></script>
@@ -22,17 +21,21 @@
     <link rel="stylesheet" href="{% static 'bootstrap-4.3.1-dist/css/bootstrap-grid.css' %}"/>
     <script src="{% static 'bootstrap-4.3.1-dist/js/bootstrap.js' %}"></script>
 
+    {% block head %}
+    {% endblock %}
 </head>
 <body>
 <div id="container" class="container col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
     <header>
         <img src="{% static 'img/logo.png' %}">
+        {% if user.is_authenticated %}
         <div class="avatar">
             <a href="">
                 <div></div>
             </a>
             <p></p>
         </div>
+        {% endif %}
     </header>
     <div class="menu_horizontal col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <nav class="ham_button ham_button_def col-xl-0 col-lg-0 col-md-12  col-sm-12 col-12">
@@ -88,11 +91,15 @@
             </ul>
         </div>
         <div class="menu_horizontal_mob col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
-
+            {% if user.is_authenticated %}
+                <a>Log out</a>
+            {% else %}
+                <a href="{% url 'login' %}">Log in</a>
+            {% endif %}
         </div>
     </div>
-    {% block content %}
-    {% endblock %}
+        {% block content %}
+        {% endblock %}
     <footer>
         <h5>Design & Code by Łukasz Kwaśny & Kamil Dziok</h5>
     </footer>
